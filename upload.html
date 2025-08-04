@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Address Proof</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+    <div class="progress-bar">
+        <div class="progress-step">
+            <div class="step-label">Id Proof</div>
+            <div class="highlight"></div>
+        </div>
+        <div class="progress-step">
+            <div class="step-label active">Address Proof</div>
+            <div class="highlight active"></div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Upload your Address Proof</h2>
+        <p class="desc">Passports and driving licenses are accepted</p>
+        <form>
+            <label class="field-label" for="address-type">Address Type</label>
+            <select id="address-type">
+                <option value="">Select Address Type</option>
+                <option value="home">Home Address</option>
+                <option value="office">Office Address</option>
+            </select>
+            <label class="field-label" for="issue-date">Issue Date</label>
+            <div class="input-date">
+                <input type="text" id="issue-date" placeholder="dd-----yyyy">
+                <span class="calendar-icon">&#128197;</span>
+            </div>
+            <div class="proof-section">
+                <span class="section-label">Proof Of address</span>
+                <div class="proof-files">
+                    <div class="proof-box">
+                        <span class="box-label">ID Front</span>
+                        <div class="file-upload">
+                            <span class="upload-icon">&#8682;</span>
+                            <div class="browse-files">Browse Files</div>
+                            <div class="sub-text">Drag and drop files here</div>
+                        </div>
+                    </div>
+                    <div class="proof-box">
+                        <span class="box-label">ID Back</span>
+                        <div class="file-upload">
+                            <span class="upload-icon">&#8682;</span>
+                            <div class="browse-files">Browse Files</div>
+                            <div class="sub-text">Drag and drop files here</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="note">Please note that the documents should not be older then 75 days</div>
+            <button class="continue-btn" type="submit">Continue</button>
+        </form>
+    </div>
+</body>
+
+</html>
