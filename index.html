@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload your Identity Proof</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-wrapper">
+    <div class="form-tabs">
+      <div class="tab-label active">Id Proof</div>
+      <div class="tab-progress">
+        <div class="tab-line active"></div>
+        <div class="tab-line"></div>
+      </div>
+      <div class="tab-label">Address Proof</div>
+    </div>
+    <div class="form-main">
+      <h2>Upload your Identity Proof</h2>
+      <div class="desc">Passports and driving licenses are accepted</div>
+      <form autocomplete="off">
+        <div class="form-fields">
+          <div>
+            <label for="id-number">Id Number</label>
+            <input id="id-number" type="text" placeholder="Enter Id Number">
+          </div>
+          <div class="file-uploader">
+            <label>ID Front</label>
+            <div class="uploader-box">
+              <input type="file" id="id-front" style="display:none;">
+              <label for="id-front" class="uploader-clickable">
+                <div class="uploader-icon">&#8682;</div>
+                <div class="uploader-text">Browse Files</div>
+                <div class="uploader-sub">Drag and drop files here</div>
+              </label>
+            </div>
+          </div>
+          <div>
+            <label for="id-type">Id Type</label>
+            <select id="id-type">
+              <option>Select Id Type</option>
+              <option>Passport</option>
+              <option>Driving License</option>
+            </select>
+          </div>
+          <div class="file-uploader">
+            <label>ID Back</label>
+            <div class="uploader-box">
+              <input type="file" id="id-back" style="display:none;">
+              <label for="id-back" class="uploader-clickable">
+                <div class="uploader-icon">&#8682;</div>
+                <div class="uploader-text">Browse Files</div>
+                <div class="uploader-sub">Drag and drop files here</div>
+              </label>
+            </div>
+          </div>
+          <div>
+            <label for="issue-date">Issue Date</label>
+            <input id="issue-date" type="date" placeholder="dd-----yyyy">
+          </div>
+          <div></div>
+          <div>
+            <label for="expiry-date">Expiry Date</label>
+            <input id="expiry-date" type="date" placeholder="dd-----yyyy">
+          </div>
+        </div>
+        <button type="submit" class="continue-btn">Continue</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
